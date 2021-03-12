@@ -23,5 +23,61 @@ body { font-family: 'MuseoModerno', sans-serif; font-weight: 500; }
 
 .button { width: 153px; height: 32px; background: #C70101; border-radius: 5px; color: white; border: none; cursor: pointer; font-weight: 500; text-transform: uppercase; font-size: 12px; }
 .button_main { width: 300px; height: 50px; font-size: 16px; line-height: 25px; margin-top: 67px; }
+.button_submit { width: 100%; height: 58px; font-weight: 500; font-size: 16px; }
+
+.advantages { background-color: #F6F6F6; padding: 70px 0 80px 0; }
+.advantages__title { font-weight: 700; font-size: 30px; line-height: 30px; text-align: center; color: #0D0D0D; }
+.advantages__items { margin-top: 60px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.advantages__item { width: 270px; text-align: center; }
+.advantages__item-title { margin-top: 35px; font-weight: 700; font-size: 18px; line-height: 29px; }
+.advantages__item-descr { font-weight: 300; font-size: 14px; margin-top: 20px; }
+
+.title { font-weight: 700; font-size: 30px; line-height: 54px; text-transform: uppercase; }
+.title_left { font-size: 36px; text-align: left; }
+
+.consultation { min-height: 680px; padding: 100px 0 92px 0; background: url("../img/bg2.jpg") center center/cover no-repeat; color: white; }
+.consultation__descr { font-weight: 500; font-size: 20px; line-height: 30px; }
+
+.feed-form { margin-top: 36px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: 300px; }
+.feed-form input { height: 50px; background: #FFFFFF; border-radius: 5px; margin-bottom: 15px; border: none; padding: 0 20px; font-weight: 300; font-size: 14px; color: #4B4B4B; }
+.feed-form input:nth-child(3) { margin-bottom: 20px; }
+
+@media (max-width: 992px) { .advantages__items { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+  .advantages__item { padding: 20px; }
+  .advantages__item-title { margin-top: 10px; }
+  .advantages__item-descr { margin-top: 15px; }
+  .advantages__title { font-size: 30px; }
+  .promo .container { max-width: 885px; padding: 0 10px; }
+  .promo__header { font-size: 37px; }
+  .promo__subheader { font-size: 20px; }
+  .title_left { font-size: 28px; line-height: 1.5; } }
+@media (max-width: 768px) { .header__official { display: none; } }
+@media (max-width: 560px) { .header__logo { width: 170px; }
+  .header__phone { font-size: 13px; }
+  .title_left { text-align: center; font-size: 21px; }
+  .consultation__descr { text-align: center; font-size: 17px; }
+  .feed-form { margin: 36px auto 0; }
+  .consultation { min-height: 520px; padding: 56px 0 0px 0; }
+  .button { width: 110px; height: 32px; background: #C70101; border-radius: 5px; color: white; border: none; cursor: pointer; font-weight: 500; text-transform: uppercase; font-size: 10px; }
+  .button_main { width: 300px; height: 50px; font-size: 16px; line-height: 25px; margin-top: 67px; }
+  .button_submit { width: 100%; height: 58px; font-weight: 500; font-size: 16px; }
+  .promo__wrapper { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+  .promo__icons { -ms-flex-pack: distribute; justify-content: space-around; }
+  .promo__header { font-size: 28px; }
+  .promo__subheader { font-size: 14px; } }
+@media (max-width: 425px) { .promo__icons { -ms-flex-wrap: wrap; flex-wrap: wrap; width: 300px; }
+  .promo__icon { padding: 15px; } }
+@media (max-width: 392px) { .advantages__title { font-size: 22px; }
+  .advantages { padding: 23px 0 30px 0; }
+  .advantages__items { margin-top: 40px; }
+  .header__logo { width: 145px; }
+  .header__phone { font-size: 11px; }
+  .button { width: 97px; height: 23px; font-weight: 500; font-size: 8px; }
+  .button_main { width: 300px; height: 50px; font-size: 16px; line-height: 25px; margin-top: 67px; }
+  .button_submit { width: 100%; height: 58px; font-weight: 500; font-size: 16px; }
+  .title_left { text-align: center; font-size: 15px; }
+  .consultation__descr { font-size: 13px; line-height: 1.4; }
+  .promo__header { font-size: 22px; }
+  .promo__subheader { font-size: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
