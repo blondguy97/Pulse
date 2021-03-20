@@ -1,11 +1,14 @@
 .carousel {
     padding: 81px 0;
     &__inner {
-        width: 750px;
+        max-width: 750px;
         margin: 0 auto;
         position: relative;
+        img {
+            width: 100%;
+        }
     }
-    .slick-prev{
+    .slick-prev, .slick-next {
         border: none;
         background-color: transparent;
         cursor: pointer;
@@ -15,9 +18,12 @@
         left: -66px;
         img {
             width: 31px;
-            height: 50px;
-            
+            height: 50px;    
         }
+    }          
+    .slick-next {
+        right: -66px;
+        left: auto;
     }          
 }
 
