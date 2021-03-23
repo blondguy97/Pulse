@@ -10,8 +10,23 @@ $(document).ready(function(){
                 dots: true,
                 arrows: false
               }
-            },
-           
+            }
           ]
       });
-  });
+
+      $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
+        $(this)
+          .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
+          .closest('div.container').find('div.catalog__content').removeClass('active').eq($(this).index()).addClass('active');
+      });
+
+      // Modal 
+        
+      $('[data-modal=consultation]').on('click', function(){
+          $('.overlay, #consultation').fadeIn('fast');
+      });
+      $('.modal__close').on('click', function() {
+        $('.overlay, #consultation').fadeOut('fast');
+      });
+
+});

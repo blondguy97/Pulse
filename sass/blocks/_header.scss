@@ -26,10 +26,6 @@
         color: white;
         text-decoration: none;
         transition: 0.4s all;
-        
-        &:hover {
-            color: $main-color;
-        }
     }
     &__contacts {
         display: flex;
