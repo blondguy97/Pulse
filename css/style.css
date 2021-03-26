@@ -67,8 +67,9 @@ body { font-family: 'MuseoModerno', sans-serif; font-weight: 500; }
 .footer__phone { font-weight: 700; font-size: 20px; color: white; display: block; text-align: center; }
 .footer__phone a { color: white; text-decoration: none; }
 .footer__social { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-.footer__social-item { width: 50px; height: 50px; border: 2px solid white; border-radius: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 0 15px; margin-top: 36px; }
+.footer__social-item { width: 50px; height: 50px; border: 2px solid white; border-radius: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 0 15px; -webkit-transition: .5s all; transition: .5s all; margin-top: 36px; }
 .footer__social-item img { height: 27px; }
+.footer__social-item:hover { background-color: #f64b4b; }
 
 .overlay { position: fixed; width: 100%; height: 100%; top: 0; background-color: rgba(0, 0, 0, 0.5); display: none; }
 

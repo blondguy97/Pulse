@@ -29,4 +29,29 @@ $(document).ready(function(){
         $('.overlay, #consultation').fadeOut('fast');
       });
 
+
+ 
+    $('#consultation-form').validate({
+      rules: {
+        name: 'required',
+        phone: 'required',
+        email: {
+          required: true,
+          email: true
+        },
+        messages: {
+          name: "Пожалуйста, введите свое имя",
+          phone: 'Пожалуйста, введите свой телефон',
+          email: {
+            required: "Пожалуйста, введите свой почтовый адрес",
+            email: "Неправильно введен адрес почты",
+          }
+        }
+      }
+    });
+
+    $('#order form').validate();
+
+    $('input[name=phone').mask('+7(999)999-99-99', {placeholder: '*'});
 });
+
